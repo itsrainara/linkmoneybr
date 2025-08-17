@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Link Money — Remessas Internacionais</title>
+  <meta name="description" content="Remessas internacionais com taxas reduzidas (2%–2,5%), rapidez e atendimento humano. USD, EUR e mais." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+ 
+  <header id="site-header" class="header">
+    <nav class="container nav">
+      <a href="#hero" class="brand" aria-label="Link Money - Início">
+        <img src="assets/LinkMoney_logo.png" alt="Link Money" class="logo-img" />
+      </a>
+
+      <div class="nav-links" role="navigation" aria-label="Navegação principal">
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#contato" class="nav-link">Contato</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a
+          class="btn cta"
+          href="https://wa.me/5519991907613?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Link%20Money"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Entre em contato
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="topo" class="main">
+    
+    <section class="hero container" id="hero">
+      <h1 class="hero-title">Sua ponte financeira entre o Brasil e o mundo</h1>
+      <p class="hero-subtitle">Remessas internacionais com taxas reduzidas, rapidez e atendimento humano.</p>
+      <a href="#contato" class="btn">Fazer Simulação</a>
+    </section>
+
+    
+    <section id="servicos" class="container section">
+      <h2 class="section-title">Nossos Serviços</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Conversão de Moedas</h3>
+          <p>Taxas reduzidas entre 2% e 2,5%, com máxima transparência.</p>
+        </article>
+        <article class="card">
+          <h3>Processamento Rápido</h3>
+          <p>Envie e receba seu dinheiro com agilidade e sem burocracia.</p>
+        </article>
+        <article class="card">
+          <h3>Atendimento Consultivo</h3>
+          <p>Suporte humano em cada etapa da sua remessa e envio de comprovantes.</p>
+        </article>
+        <article class="card">
+          <h3>Suporte Multimoedas</h3>
+          <p>Dólar, euro e outras moedas internacionais.</p>
+        </article>
+        <article class="card">
+          <h3>Contas Globais</h3>
+          <p>Indicação de Wise, Nomad e Payoneer para facilitar sua vida no exterior.</p>
+        </article>
+        <article class="card">
+          <h3>Política de Reembolso</h3>
+          <p>Garantimos reembolso conforme a cotação da data do acordo.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    
+    <section id="contato" class="container section">
+      <h2 class="section-title">Entre em Contato</h2>
+
+      <form class="form" id="contact-form" novalidate>
+        
+        <input type="text" name="company" id="company" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Seu nome"
+          autocomplete="name"
+          required
+        />
+
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Telefone com DDD"
+          inputmode="numeric"
+          aria-describedby="phoneHelp"
+          maxlength="16"
+          required
+        />
+
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Descreva sua dúvida"
+          required
+        ></textarea>
+
+        <button type="submit" id="submitBtn" class="btn">Enviar</button>
+        <p id="formStatus" class="alert" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    
+    <section id="sobre" class="container section">
+      <h2 class="section-title">Sobre Nós</h2>
+      <p>
+        Somos uma empresa digital especializada em remessas internacionais rápidas, seguras e sem burocracia. Nosso objetivo é simplificar a vida de estudantes, viajantes, expatriados e profissionais que precisam movimentar dinheiro entre países de forma eficiente e com taxas muito mais justas que bancos tradicionais.
+        <p>Combinamos tecnologia, agilidade e transparência para oferecer uma experiência sem complicações: você envia, nós cuidamos do processo e o dinheiro chega onde você precisa, sem dores de cabeça.</p>
+      </p>
+      <p>
+        Nossa visão é ser a ponte confiável entre o Brasil e o mundo.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Link Money — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
