@@ -1,11 +1,16 @@
 function applyHeaderOffset() {
-  const header = document.getElementById('site-header');
+  const header = document.getElementById('site-header') || document.querySelector('.header');
   if (!header) return;
+
   const h = header.offsetHeight;
+
   document.body.style.paddingTop = h + 'px';
+
+  document.documentElement.style.setProperty('--header-offset', h + 'px');
 }
 window.addEventListener('load', applyHeaderOffset);
 window.addEventListener('resize', applyHeaderOffset);
+
 
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
